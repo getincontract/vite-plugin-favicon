@@ -127,23 +127,6 @@
 		"parse-author": "^2.0.0",
 		"parse5": "^6.0.1"
 	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"release": {
-		"extends": "./config/.releaserc.json"
-	},
-	"config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-			"pre-push": "npm run test"
-		}
-	},
 	"eslintConfig": {
 		"extends": "./config/.eslintrc.json"
 	},
