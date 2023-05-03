@@ -59,8 +59,8 @@ export interface FaviconOptions {
 	 *   * false - use default
 	 *   * true - force use default, e.g. set background for Android icons
 	 *   * color - set background for the specified icons
-	 * - mask - apply mask in order to create circle icon (applied by default for firefox)
-	 * - overlayGlow - apply glow effect after mask has been applied (applied by default for firefox)
+	 * - mask - apply mask in order to create circle icon
+	 * - overlayGlow - apply glow effect after mask has been applied
 	 * - overlayShadow - apply drop shadow after mask has been applied
 	 */
 	icons: Partial<{
@@ -70,12 +70,8 @@ export interface FaviconOptions {
 		appleIcon: boolean | IconOptions | string[];
 		/* Create Apple startup images. */
 		appleStartup: boolean | IconOptions | string[];
-		/* Create Opera Coast icon. */
-		coast: boolean | IconOptions | string[];
 		/* Create regular favicons. */
 		favicons: boolean | IconOptions | string[];
-		/* Create Firefox OS icons. */
-		firefox: boolean | IconOptions | string[];
 		/* Create Windows 8 tile icons. */
 		windows: boolean | IconOptions | string[];
 		/* Create Yandex browser icon. */
